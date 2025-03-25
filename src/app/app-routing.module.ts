@@ -5,9 +5,10 @@ import { InformationComponent } from './components/information/information.compo
 
 const routes: Routes = [
   {path: 'home', component: MainComponent},
+  {path:'info',component:InformationComponent},
+
   {path: '**', component: MainComponent},
   {path: '', component: MainComponent},
-  {path:'info',component:InformationComponent}
 ];
 
 @NgModule({
