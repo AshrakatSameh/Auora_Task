@@ -1,0 +1,46 @@
+<div class="hero-container" [ngStyle]="{'background-image': 'url(' + slides[currentIndex] + ')'}">
+  
+    <!-- Hero Content -->
+    <div class="hero-content mt-5">
+      <h1>حيث يلتقي البحر بجمال التصميم</h1>
+      <p>مشروع يجمع بين الفخامة والراحة</p>
+      <button class="vr-btn">تشغيل VR<img class="px-1" src="assets/images/icon1.png"/></button>
+    </div>
+  
+    <div class="slider-info">
+        <span class="current-slide">{{ currentIndex + 1 }}</span>
+        <div class="progress-bar">
+          <div class="progress" [style.width]="progressWidth"></div>
+        </div>
+        <span class="total-slides">{{ slides.length }}</span>
+      </div>
+
+    <!-- Image Slider -->
+    <div class="slider-container">
+        <!-- Left Content -->
+        <div class="slider-info">
+            <span class="current-slide">{{ currentIndex + 1 }}</span>
+            <div class="progress-bar">
+              <div class="progress" [style.width]="progressWidth"></div>
+            </div>
+            <span class="total-slides">{{ slides.length }}</span>
+          </div>
+      
+        <!-- Image Slider -->
+        <!-- <div class="slider-images">
+          <img src="assets/images/slider1.jpg" alt="Slide Image" class="active-slide">
+        </div> -->
+      
+        <!-- Right Controls -->
+        <div class="slider-controls">
+            <img src="assets/images/arrow2.png" alt="Previous" class="prev-btn" (click)="prevSlide()">
+            <img src="assets/images/arrow1.png" alt="Next" class="next-btn" (click)="nextSlide()">
+          </div>
+      </div>
+      
+    <!-- <div class="slider-controls">
+        <img src="assets/images/arrow2.png" alt="Previous" class="prev-btn">
+        <img src="assets/images/arrow1.png" alt="Next" class="next-btn">
+      </div> -->
+  </div>
+  

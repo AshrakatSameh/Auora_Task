@@ -1,0 +1,122 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .hero-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('../../../assets/images/bf7d93654a8b9e761c63b2172c01297d.png') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    text-align: center;
+    color: white;
+    font-family: 'Tajawal', sans-serif;
+    direction: rtl; /* Right to Left for Arabic */
+  }
+  
+
+  
+  /* Hero Content */
+  .hero-content {
+    max-width: 600px;
+    text-align: right;
+    margin-right: 4rem;
+
+
+  }
+  
+  .hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 500;
+
+  }
+  
+  .vr-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  .vr-btn img{
+    display: inline-block;
+    width: 17px;
+    height: 15px;
+    margin: 0px 8px;
+  }
+  
+  .vr-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Image Slider */
+  .slider-controls {
+    position: absolute;
+    bottom: 20px; 
+    right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+  }
+  
+  .slider-controls img {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .slider-controls img:hover {
+    background: rgba(255, 255, 255, 0.3); 
+  }
+  .slider-info {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 120px; /* Adjust width to match design */
+  }
+  
+  .current-slide, .total-slides {
+    flex-shrink: 0;
+  }
+  
+  .progress-bar {
+    flex-grow: 1;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.5);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    background: white;
+    width: 0%; /* Dynamic width controlled via Angular */
+    transition: width 0.5s ease-in-out;
+  }
+  
+  
+  
+  

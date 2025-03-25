@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Prevent horizontal scrolling */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Ensure all content fits within the screen */
+  .container {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 16px; /* Prevents content from touching edges */
+    box-sizing: border-box;
+  }
+  
+  /* Make images responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Flex containers should wrap on small screens */
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Ensure text and elements do not overflow */
+  .flex-item {
+    min-width: 0;
+  }
+  
+  /* Fix large sections overflowing on small screens */
+  section, div {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+*{
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600; /* Removed 'px' */
+    font-style: normal;
+  
+}
+
+
